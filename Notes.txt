@@ -1,0 +1,1 @@
+2828 solution outperforms 99.72% of other submitted python solutions
