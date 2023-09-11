@@ -1,3 +1,4 @@
 2828 solution outperforms 99.72% of other submitted python solutions in time
-2839 solution outperfroms 68.74% and 70.38% of users in time and space respectively
+2839 solution outperfroms 68.74% and 70.38% of users in time and memory respectively
 2710 solution outperforms 82.72% of users in time
+2810 solution outperforms 99.78% of users in memory
