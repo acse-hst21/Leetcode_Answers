@@ -4,3 +4,4 @@
 2810 solution outperforms 99.78% of users in memory
 338 solution outperforms 78.75% and 93.50% of users in time and memory respectively
 191 solution outperforms 74.18% and 98.57% of users in time and memory respectively
+67 solution outperforms 93.02% of users in memory
