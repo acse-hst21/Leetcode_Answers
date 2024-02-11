@@ -8,3 +8,4 @@
 43 solution outperforms 91.09% and 99.64% of users in time and memory respectively
 2733 solution outperforms (approximately) 100% of users in time
 2239 solution outperforms 99% of users in time
+287 solution outperforms 98% of users in time
