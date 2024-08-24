@@ -1,22 +1,21 @@
-class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
-
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         output = []
+        nums.sort()
 
-        for i in range(len(nums)):
-            for j in range(len(nums)):
-                for k in range(len(nums)):
-                    if i == j or j == k or i == k:
-                        pass
-                    else:
-                        if nums[i] + nums[j] + nums[k] == 0:
-                            possible = [nums[i], nums[j], nums[k]]
-                            possible = sorted(possible)
-                            if possible not in output:
-                                output.append(possible)
+        for index, value in enumerate(nums):
+            if index > 0 and value == nums[index-1]:
+                continue
+            l = index + 1
+            r = len(nums) - 1
+            while l < r:
+                current_sum = value + nums[l] + nums[r]
+                if current_sum == 0:
+                    output.append([value, nums[l], nums[r]])
+                    l += 1
+                elif current_sum < 0:
+                    l += 1
+                else:
+                    r -= 1
         
-        return output
+        return [list(x) for x in set(tuple(sublist) for sublist in output)]
